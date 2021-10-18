@@ -46,7 +46,6 @@ module.exports = class Queue {
     this.head.value = this.head.next.value;
     this.head.next = this.head.next.next;
     return headValue;
-    
   }
 
 }
