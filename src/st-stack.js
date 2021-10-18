@@ -13,16 +13,16 @@ const { NotImplementedError } = require('../extensions/index.js');
  *
  */
  module.exports = class Stack {
-   elements = [];
+   stackMassive = [];
   push(element) {
-    this.elements.push(element);
+    this.stackMassive.push(element);
   }
 
   pop() {
-    return this.elements.pop();
+    return this.stackMassive.pop();
   }
 
   peek() {
-    return this.elements[this.elements.length - 1];
+    return this.stackMassive[this.stackMassive.length - 1];
   }
 }
