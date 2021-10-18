@@ -13,14 +13,10 @@ module.exports = class BinarySearchTree {
   }
 
   root() {
-    // throw new NotImplementedError('Not implemented');
-    // remove line with error and write your code here
     return this.bstRoot;
   }
 
   add(data) {
-    // throw new NotImplementedError('Not implemented');
-    // remove line with error and write your code here
     this.bstRoot = addDateToBst(this.bstRoot, data);
 
     function addDateToBst(node, data) {
@@ -44,9 +40,6 @@ module.exports = class BinarySearchTree {
   }
 
   has(data) {
-    // throw new NotImplementedError('Not implemented');
-    // remove line with error and write your code here
-    // let node = this.bstRoot;
     let result = hasData(this.bstRoot, data);
 
     function hasData(node, data) {
@@ -71,8 +64,7 @@ module.exports = class BinarySearchTree {
   }
 
   find(data) {
-    // throw new NotImplementedError('Not implemented');
-    // remove line with error and write your code here
+
     return findData(this.bstRoot, data);
 
     function findData(node, data) {
@@ -101,8 +93,6 @@ module.exports = class BinarySearchTree {
   }
 
   min() {
-    // throw new NotImplementedError('Not implemented');
-    // remove line with error and write your code here
     if (!this.bstRoot) {
       return;
     }
@@ -120,8 +110,6 @@ module.exports = class BinarySearchTree {
   }
 
   max() {
-    // throw new NotImplementedError('Not implemented');
-    // remove line with error and write your code here
     if (!this.bstRoot) {
       return;
     }
